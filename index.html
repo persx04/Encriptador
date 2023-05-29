@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Encriptador</title>
+</head>
+
+<body>
+  <nav class="reset">
+
+      <h1>Encriptador</h6>
+    
+      <div class="button-container">
+
+        <button class="btn btn-r" id="reset">Reset</button>
+      </div>
+  </nav>
+
+  <div class="contenedor">
+    
+    <div class="modulo">
+      <div> 
+        <textarea class="intoArea" name="" id="encriptation" placeholder="Texto a encriptar o desencriptar"></textarea>
+      </div>
+      <div>
+
+        <small class="rule">Solo letras minusculas y sin acentos</small>
+      </div>
+      <button id="encriptar" class="btn btn-e">Encriptar</button>
+      <button id="desencriptar" class="btn btn-d">Desenciptar</button>
+    </div>
+    
+    <div class="modulo">
+      
+      <div>
+        <textarea class="resultadoArea" name="" id="resultado" placeholder="No se a encriptado o desencriptado ningun texto" disabled></textarea>
+      </div>
+      <button id="copiar" class="btn-copiar">Copiar</button>
+      
+    </div>
+  </div>
+
+
+  <div id="customAlert" class="custom-alert" style="display: none;">
+    <small id="customAlertText"></small>
+  </div>
+  
+  <script src="/scripts/script.js"></script>
+  
+</body>
+</html>
